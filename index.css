@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+nav > a {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav {
+  border-radius: 9px;
+  gap: 3rem;
+  justify-content: center;
+  width: 40vw;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.heroSection{
+  display: flex;
+  height: 50vh;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100vw;
+  padding: 10px;
+}
+.bannerSection{
+  display: flex;
+  justify-content: space-around;
+}
+h2{
+  font-size: 10rem;
+}
+.headingDesc{
+  display: flex;
+  padding: 1rem;
+  width:max-content;
+  flex-direction: column;
+}
+.headingDesc > p{
+  font-size: 1.5rem;
+}
+#exploreBtn{
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 10px;
+  width: 6vw;
+  background-color: purple;
+  color: white;
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+#exploreBtn:hover{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.MoreBtn{
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 10px;
+  width: 6vw;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+@keyframes glow-animation {
+  from {
+    box-shadow: 0 0 10px #dd61ff80;
+  }
+  to {
+    box-shadow: 0 0 30px rgb(232, 54, 255);
+  }
+}
+.MoreBtn:hover{
+  cursor: pointer;
+  color: white;
+  background-color: purple;
+  animation: glow-animation 1.5s ease-in-out infinite alternate;
+}
+.blogSection{
+  display: flex;
+  gap: 2rem;
+}
+.cardContent > p{
+  color: rgb(77, 77, 77);
+  line-height: 2rem;
+}
+.cardSection{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  pad: 10px;
+}
+span{
+  color: purple;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 26vw;
+  align-items: center;
+  height: max-content;
+  padding: 2rem;
+  border-radius: 10px;
+  gap: 5px;
+}
+#cardUserInfo{
+  font-size: 1.2rem;
+  color: purple;
+}
+#cardImg{
+  border-bottom: 1px solid purple;
+  width: 25vw;
+  height: 35vh;
+}
+#cardImg:hover{
+  cursor: pointer;
+  zoom: 103%;
+  position: center;
+}
+.subscribeSection{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin: auto;
+  padding: 10px;
+}
+.subscribeSection > h3{
+  align-self: center;
+  font-size: 3rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.labelInput{
+  font-size: 1.5rem;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+input{
+  width: 25vw;
+  border-radius: 5px;
+  border: 2px solid purple;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.footerSection{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px;
+}
+.iconContainer{
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  gap: 2rem;
+}
+a > img{
+  width: 2vw;
+  height: 4vh;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon:hover{
+  animation: spin 1.5s ease-in-out infinite alternate;
+}
+
+select{
+  padding: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
